@@ -47,7 +47,7 @@ class Gpio_input(SignalModule, Thread):
 
         # setup GPIO
         GPIO.setmode(GPIO.BCM)
-
+	
         # init each GPIO pin
         for pin in self.list_pin:
             GPIO.setup(pin.pin_number, GPIO.IN, pull_up_down=GPIO.PUD_UP)
